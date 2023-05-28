@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:black;
+    color: blueviolet;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{
+    padding: 20px;
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+}
+div{
+    margin: 5px;
+    
+}
+img{
+    width: 250px;
+    height: 150px;
+    border: rgb(111, 101, 101)2px double;
+    opacity: .4;
+}
+img:hover{
+    opacity: 1;
+    border: whitesmoke 2px solid;
+}
