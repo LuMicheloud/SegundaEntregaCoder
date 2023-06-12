@@ -1,0 +1,51 @@
+footer{
+    background-color:$colortexto;
+ }
+ .wrapper{
+    position: sticky;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    text-decoration: none;
+    list-style: none;
+    ul{
+        list-style: none;
+    }
+    li{
+        width: 75px;
+        height: 75px;
+        line-height: 75px;
+        margin: 0 10px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 5px solid #f5f5f5;
+        float: left;
+        transition: all 0.5 ease;
+    }
+    a{
+        text-decoration: none;
+    }
+    .fa{
+        color: #f5f5f5;
+        margin-top: 20px;
+        transition: all 0.5 ease;
+ }
+ .arriba:hover{
+    transform: scale(1.1);
+    background-color: whitesmoke;
+ }
+ .facebook:hover{
+    transform: scale(1.1);
+    background-color:rgb(43, 155, 230);
+ }
+ .whatsapp:hover{
+    transform: scale(1.1);
+    background-color:rgb(25, 125, 22);
+ }
+ .instagram:hover{
+    transform: scale(1.1);
+    background-color:rgb(175, 51, 84);
+ }
+ }
