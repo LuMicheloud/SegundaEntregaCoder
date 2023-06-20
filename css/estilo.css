@@ -1,3 +1,11 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  height: 100%;
+}
 body {
   background-color: #3fb991;
   font-family: 'Barlow Condensed', sans-serif;
@@ -10,38 +18,30 @@ header {
   background-image: url(../img/cabanaS4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  color: #39248b; }
+  width: 1300px;
+  height: min-content;
+  color: #39248b;}
+
+.nav-link{
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+ 
+}
+.nav-link:hover{
+  text-decoration: none;
+  border-bottom: 15px;
+  background-color: #3fb991;
+  border-radius: 20px;
+ 
+}
 
 h1 {
   font-family: 'Merienda', cursive;
   text-align: center;
   font-size: 2rem;
   color: #39248b; }
-
-nav {
-  background-color: #39248b;
-  width: max-content;
-  padding-inline-end: 20px;
-  margin: 10px auto;
-  align-items: center;
-  color: #f3f1ed;
-  display: flex;
-  justify-content: center;
-  text-decoration: none; }
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-  justify-items: center; }
-  nav ul a {
-    padding: 10px;
-    margin: 10px;
-    color: #0c1312; }
-  nav ul a:hover {
-    color: black;
-    background-color: #3fb991;
-    border-bottom: 30%; }
 
 footer {
   background-color: #39248b; }
@@ -206,38 +206,33 @@ h3 {
   padding: 10px;
   color: white; }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1.3fr 0.7fr;
-  grid-template-rows: 1fr 0.3fr 1.5fr 2fr 2fr 0.2fr;
-  grid-auto-columns: 1fr;
-  gap: 1px 3px;
-  grid-auto-flow: row;
-  grid-template-areas: "header header" "nav nav" "main aside" "galeria1 galeria1" "galeria2 galeria2" "footer footer"; }
-
-.header {
-  grid-area: header; }
-
-.nav {
-  grid-area: nav;
-  width: 100%;
-  height: auto; }
-
-.main {
-  grid-area: main; }
-
-.aside {
-  grid-area: aside; }
-
-.galeria1 {
-  grid-area: galeria1; }
-
-.galeria2 {
-  grid-area: galeria2; }
-
-.footer {
-  grid-area: footer; }
-
+  .container {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 1.4fr 1.3fr 1.3fr 0.5fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 3px 3px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header"
+      "main sidebar"
+      "galeria1 galeria1"
+      "galeria2 galeria2"
+      "footer footer";
+  }
+  
+  .header { grid-area: header; }
+  
+  .main { grid-area: main; }
+  
+  .sidebar { grid-area: sidebar; }
+  
+  .galeria1 { grid-area: galeria1; }
+  
+  .galeria2 { grid-area: galeria2; }
+  
+  .footer { grid-area: footer; }
+  
 img {
   width: 400px;
   height: 500px;
@@ -284,40 +279,3 @@ img {
   width: 700px;
   border-radius: 5px; }
 
-@media only screen and (max-width: 600px) {
-  .grid-container {
-    background-color: #138f13;
-    display: grid;
-    grid-template-columns: 0.5fr 1.5fr 1fr;
-    grid-template-rows: 0.6fr 1.1fr 1.8fr 0.5fr 1.5fr 0.5fr;
-    grid-auto-columns: 1fr;
-    gap: 3px 3px;
-    grid-auto-flow: row;
-    grid-template-areas: "header header header" "nav main aside" "nav galeria1 galeria1" "nav galeria2 galeria2" "footer footer footer"; }
-  .nav {
-    grid-area: nav; }
-  .header {
-    grid-area: header; }
-  .main {
-    grid-area: main; }
-  .aside {
-    grid-area: aside; }
-  .galeria1 {
-    grid-area: galeria1; }
-  .galeria2 {
-    grid-area: galeria2; }
-  .footer {
-    grid-area: footer;
-    height: auto; } }
-
-@media only screen and (max-width: 600px) {
-  .container-pag2 {
-    background-color: #0aa06e;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #0c1312; } }
-
-@media only screen and (max-width: 600px) {
-  .grid-form {
-    background-color: #0aa06e;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: lightyellow; } }
