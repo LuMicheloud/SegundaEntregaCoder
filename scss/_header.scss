@@ -1,10 +1,15 @@
 header{ 
+   background-image: url(../img/cabanaS4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: $colortexto;
+    width: 100%;
  }
  h1{
     font-family: 'Merienda', cursive;
     text-align: center;
     font-size: 2rem;
     color: $colortexto; }
+.nav-link:hover{
+   text-decoration: underline;
+}
