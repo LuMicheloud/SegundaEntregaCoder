@@ -307,3 +307,17 @@ img {
   .comentarios .caja-contenedor .caja .comentarios {
     font-size: 2rem;
     padding: 1rem; }
+
+@media (max-width: 767.98px) {
+  body.contenedor {
+    background-color: antiquewhite;
+    gap: 5px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "header header" "main main" "sidebar sidebar" "galeria1 galeria1" "galeria2 galeria2" "footer footer"; } }
+
+@media (max-width: 468px) {
+  body.contenedor {
+    background-color: darkolivegreen;
+    gap: 5px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "header header" "main main" "sidebar sidebar" "galeria1 galeria1" "galeria2 galeria2" "footer footer"; } }
