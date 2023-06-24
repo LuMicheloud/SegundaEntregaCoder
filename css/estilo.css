@@ -8,7 +8,8 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   color: #39248b;
-  width: 100%; }
+  width: 100%;
+  grid-area: header; }
 
 h1 {
   font-family: 'Merienda', cursive;
@@ -34,7 +35,8 @@ h1 {
   box-shadow: none; }
 
 footer {
-  background-color: #39248b; }
+  background-color: #39248b;
+  grid-area: footer; }
 
 .wrapper {
   position: sticky;
@@ -182,13 +184,15 @@ h3 {
   margin: 10px;
   margin-left: 50px;
   padding: 15px;
-  width: 1000px; }
+  width: 1000px;
+  grid-area: galeria1; }
 
 .galeria2 {
   margin: 20px;
   margin-left: 50px;
   padding: 15px;
-  width: 1000px; }
+  width: 1000px;
+  grid-area: galeria2; }
 
 .menupag2 {
   text-decoration: none;
