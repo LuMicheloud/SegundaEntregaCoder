@@ -5,6 +5,7 @@ header{
     color: $colortexto;
     width: 100%;
     grid-area: header;
+    overflow: hidden;
  }
  h1{
     font-family: 'Merienda', cursive;
