@@ -1,11 +1,11 @@
 header{ 
-   background-image: url(../img/cabanaS4.jpg);
+   background-image: url(../img/frente-hm.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: $colortexto;
-    width: 100%;
+    width: auto;
     grid-area: header;
-    overflow: hidden;
+    overflow-x: hidden;
  }
  h1{
     font-family: 'Merienda', cursive;

@@ -5,13 +5,13 @@ body {
   width: 100%; }
 
 header {
-  background-image: url(../img/cabanaS4.jpg);
+  background-image: url(../img/frente-hm.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: #39248b;
-  width: 100%;
+  width: auto;
   grid-area: header;
-  overflow: hidden; }
+  overflow-x: hidden; }
 
 h1 {
   font-family: 'Merienda', cursive;
@@ -146,7 +146,8 @@ h1 {
 
 h3 {
   text-align: center;
-  font-size: 1.5rem; }
+  font-size: 2rem;
+  color: #070707; }
 
 .subtitle {
   font-size: 1.5rem;
@@ -165,7 +166,7 @@ h3 {
   padding: 30px; }
 
 .sidebar {
-  background-image: url(../img/M.E4.jpg);
+  background-image: url(../img/fyf8.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   font-style: italic;
@@ -262,13 +263,25 @@ img {
 
 .grid-form {
   display: grid;
-  grid-template-areas: "header" "formularioMio" "footer";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1.1fr 1fr 1.2fr 1.2fr 0.5fr;
   grid-auto-columns: 1fr;
-  grid-auto-rows: auto;
-  gap: 5px 5px;
-  grid-auto-flow: row; }
+  grid-auto-rows: 1fr;
+  gap: 3px 3px;
+  grid-auto-flow: row;
+  width: 100%; }
+
+.footer {
+  grid-area: 6 / 1 / 7 / 2; }
+
+.header-form {
+  grid-area: 1 / 1 / 3 / 2; }
+
+.formularioMio {
+  grid-area: 3 / 1 / 6 / 2; }
+
+.footer {
+  grid-area: 6 / 1 / 7 / 2; }
 
 .comentarios {
   display: flex;
@@ -354,7 +367,7 @@ img {
   .grid-container {
     grid-template-areas: "header" "main" "sidebar" "galeria1" "galeria2" "footer";
     grid-template-columns: 1fr;
-    grid-auto-columns: 1fr;
+    grid-auto-columns: auto;
     grid-template-rows: auto; } }
 
 @media screen and (max-width: 500px) {
@@ -365,5 +378,5 @@ img {
     grid-template-rows: auto; } }
 
 @media screen and (max-width: 480px) {
-  main .nosotros {
+  .nosotros {
     font-size: 1.2rem; } }
