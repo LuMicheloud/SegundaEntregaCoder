@@ -194,9 +194,19 @@ h1{
  .formularioMio{
     margin: 15px;
     padding: 15px;
-    width: 700px;
+    width:800px;
+    height: max-content;
     border-radius: 5px;
     grid-area: formularioMio;
+ }
+ .header-form{
+   background-image: url(../img/frente-hm.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: #39248b;
+   width: auto;
+   grid-area: header;
+   overflow-x: hidden;
  }
 
  .grid-form {  display: grid;

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   background-color: #3fb991;
   font-family: 'Barlow Condensed', sans-serif;
@@ -34,47 +33,8 @@ header {
 .navbar-toggler:focus {
   box-shadow: none; }
 
-/* Estilos del menú desplegable */
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 9999;
-  display: none;
-  min-width: 10rem;
-  padding: 0.5rem 0;
-  margin: 0.125rem 0 0;
-  font-size: 1rem;
-  color: #212529;
-  text-align: left;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.25rem; }
-
-.dropdown:hover .dropdown-menu {
-  display: block; }
-
-.dropdown-item {
-  display: block;
-  width: 100%;
-  padding: 0.25rem 1.5rem;
-  clear: both;
-  font-weight: 400;
-  color: #212529;
-  text-align: inherit;
-  white-space: nowrap;
-  background-color: transparent;
-  border: 0; }
-
-.dropdown-item:hover {
-  color: #fff;
-  background-color: #39248b; }
-
 footer {
-  background-color: #39248b;
-  grid-area: footer;
-  justify-content: space-evenly; }
+  background-color: #39248b; }
 
 .wrapper {
   position: sticky;
@@ -292,9 +252,19 @@ img {
 .formularioMio {
   margin: 15px;
   padding: 15px;
-  width: 700px;
+  width: 800px;
+  height: max-content;
   border-radius: 5px;
   grid-area: formularioMio; }
+
+.header-form {
+  background-image: url(../img/frente-hm.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #39248b;
+  width: auto;
+  grid-area: header;
+  overflow-x: hidden; }
 
 .grid-form {
   display: grid;
