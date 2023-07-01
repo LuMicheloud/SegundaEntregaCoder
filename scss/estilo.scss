@@ -313,31 +313,64 @@ h1{
   }
 }
 @media screen and (max-width: 780px) {
+   header {
+     height: 200px;
+   }
+ 
    .grid-container {
-      grid-template-areas: "header"
-                           "main"
-                           "sidebar"
-                           "galeria1"
-                           "galeria2"
-                           "footer";
-      grid-template-columns: 1fr;
-      grid-auto-columns: auto;
-      grid-template-rows: auto;
-   }}
-   @media screen and (max-width: 500px) {
-      .grid-container {
-         grid-template-areas: "header"
-                              "main"
-                              "sidebar"
-                              "galeria1"
-                              "galeria2"
-                              "footer";
-         grid-template-columns: 1fr;
-         grid-auto-columns: 1fr;
-         grid-template-rows: auto;
-      }}
-
-@media screen and (max-width: 480px) {
-       .nosotros {
-         font-size: 1.2rem;
-      } } 
+     grid-template-areas:
+       "header"
+       "main"
+       "sidebar"
+       "galeria1"
+       "galeria2"
+       "footer";
+     grid-template-columns: 1fr;
+     grid-auto-columns: auto;
+     grid-template-rows: auto;
+   }
+ 
+   .wrapper {
+     width: 100%;
+   }
+ 
+   .parrafo2 {
+     width: 100%;
+     margin-left: 0;
+   }
+ 
+   .galeria1,
+   .galeria2 {
+     margin-left: 20px;
+     width: calc(100% - 40px);
+   }
+ 
+   img {
+     width: 100%;
+     height: auto;
+   }
+ 
+   .formularioMio {
+     width: 100%;
+   }
+ 
+   .grid-form {
+     grid-template-columns: 1fr;
+     grid-template-rows: auto;
+   }
+ }
+ 
+ @media screen and (max-width: 480px) {
+   .nosotros-page h1 {
+     font-size: 60px;
+   }
+ 
+   .nosotros-page h1::after {
+     width: 20px;
+     height: 6px;
+   }
+ 
+   .nosotros {
+     font-size: 1.2rem;
+   }
+ }
